@@ -104,7 +104,7 @@
                </div> 
                 </div>
                 <div>
-                   <button class="flex bg-green-100 rounded-xl w-[130px] h-[46px] p-2"><img src="images/seat-green-filled.png" alt=""><span class="text-green-500">0 </span><span class="text-green-500">seats left</span></button>
+                   <button class="flex bg-green-100 rounded-xl w-[130px] h-[46px] p-2 gap-0.5"><img src="images/seat-green-filled.png" alt=""><span id="reduce-seat" class="text-green-500">16 </span><span   class="text-green-500"> seats left</span></button>
                 </div>
                
                </div>
@@ -151,11 +151,11 @@
              <div>
             
             <div class="flex justify-between p-5">
-                <div class="flex">
+                <div class="flex gap-1">
                 <img src="images/seat-gray.png" alt="">
-                <p class="font-semibold">avaliable</p>
+                <p class="font-semibold">Avaliable</p>
                 </div>
-                <div class="flex">
+                <div class="flex gap-1">
                 <img src="images/seat-green.png" alt="">
                 <p class="text-green-500 font-semibold">Selected</p>
                 </div>
@@ -165,64 +165,66 @@
             <div class="flex justify-end p-6">
                 <button type="submit"><img src="wheel.svg" alt=""> </button>
             </div>
-            <!-- seat A -->
-            <div class="flex gap-16 my-3 px-10">
-            
             <div>
-                <button class="rounded-lg bg-[#d1d5db] p-3 w-[5rem]">A</button>
-                <button class="rounded-lg bg-[#d1d5db] p-3 w-[5rem]">A1</button>
-                <button class="rounded-lg bg-[#d1d5db] p-3 w-[5rem]">A2</button>
-            </div>    
-            <div>
-                <button class="rounded-lg bg-[#d1d5db] p-3 w-[5rem]">A3</button>
-                <button class="rounded-lg bg-[#d1d5db] p-3 w-[5rem]">A4</button>
-            </div>
-            
-            </div>
-             <!-- seat B -->
-            
-             <div class="flex gap-16 my-3 px-10">
-            
-                <div>
-                    <button class="rounded-lg bg-[#d1d5db] p-3 w-[5rem]">B</button>
-                    <button class="rounded-lg bg-[#d1d5db] p-3 w-[5rem]">B1</button>
-                    <button class="rounded-lg bg-[#d1d5db] p-3 w-[5rem]">B2</button>
-                </div>    
-                <div>
-                    <button class="rounded-lg bg-[#d1d5db] p-3 w-[5rem]">B3</button>
-                    <button class="rounded-lg bg-[#d1d5db] p-3 w-[5rem]">B4</button>
-                </div>
-                
-                </div>
-            <!-- seat C -->
-            
+                <!-- seat A -->
             <div class="flex gap-16 my-3 px-10">
             
                 <div>
-                    <button class="rounded-lg bg-[#d1d5db] p-3 w-[5rem]">C</button>
-                    <button class="rounded-lg bg-[#d1d5db] p-3 w-[5rem]">C1</button>
-                    <button class="rounded-lg bg-[#d1d5db] p-3 w-[5rem]">C2</button>
+                    <button class="rounded-lg p-3 w-[5rem]">A</button>
+                    <button id="A1" class="rounded-lg bg-[#d1d5db] p-3 w-[5rem]">A1</button>
+                    <button id="A2" class="rounded-lg bg-[#d1d5db] p-3 w-[5rem]">A2</button>
                 </div>    
                 <div>
-                    <button class="rounded-lg bg-[#d1d5db] p-3 w-[5rem]">C3</button>
-                    <button class="rounded-lg bg-[#d1d5db] p-3 w-[5rem]">C4</button>
+                    <button id="A3" class="rounded-lg bg-[#d1d5db] p-3 w-[5rem]">A3</button>
+                    <button id="A4" class="rounded-lg bg-[#d1d5db] p-3 w-[5rem]">A4</button>
                 </div>
                 
                 </div>
-            <!-- seat D -->
-            
-            <div class="flex gap-16 my-3 px-10">
-            
-                <div>
-                    <button class="rounded-lg bg-[#d1d5db] p-3 w-[5rem]">D</button>
-                    <button class="rounded-lg bg-[#d1d5db] p-3 w-[5rem]">D1</button>
-                    <button class="rounded-lg bg-[#d1d5db] p-3 w-[5rem]">D2</button>
-                </div>    
-                <div>
-                    <button class="rounded-lg bg-[#d1d5db] p-3 w-[5rem]">D3</button>
-                    <button class="rounded-lg bg-[#d1d5db] p-3 w-[5rem]">D4</button>
-                </div>
+                 <!-- seat B -->
                 
+                 <div class="flex gap-16 my-3 px-10">
+                
+                    <div>
+                        <button class="rounded-lg p-3 w-[5rem]">B</button>
+                        <button id="B1" class="rounded-lg bg-[#d1d5db] p-3 w-[5rem]">B1</button>
+                        <button id="B2" class="rounded-lg bg-[#d1d5db] p-3 w-[5rem]">B2</button>
+                    </div>    
+                    <div>
+                        <button id="B3" class="rounded-lg bg-[#d1d5db] p-3 w-[5rem]">B3</button>
+                        <button id="B4" class="rounded-lg bg-[#d1d5db] p-3 w-[5rem]">B4</button>
+                    </div>
+                    
+                    </div>
+                <!-- seat C -->
+                
+                <div class="flex gap-16 my-3 px-10">
+                
+                    <div>
+                        <button class="rounded-lg p-3 w-[5rem]">C</button>
+                        <button id="C1" class="rounded-lg bg-[#d1d5db] p-3 w-[5rem]">C1</button>
+                        <button id="C2" class="rounded-lg bg-[#d1d5db] p-3 w-[5rem]">C2</button>
+                    </div>    
+                    <div>
+                        <button id="C3" class="rounded-lg bg-[#d1d5db] p-3 w-[5rem]">C3</button>
+                        <button id="C4" class="rounded-lg bg-[#d1d5db] p-3 w-[5rem]">C4</button>
+                    </div>
+                    
+                    </div>
+                <!-- seat D -->
+                
+                <div class="flex gap-16 my-3 px-10">
+                
+                    <div>
+                        <button class="rounded-lg p-3 w-[5rem]">D</button>
+                        <button id="D1" class="rounded-lg bg-[#d1d5db] p-3 w-[5rem]">D1</button>
+                        <button id="D2" class="rounded-lg bg-[#d1d5db] p-3 w-[5rem]">D2</button>
+                    </div>    
+                    <div>
+                        <button id="D3" class="rounded-lg bg-[#d1d5db] p-3 w-[5rem]">D3</button>
+                        <button id="D4" class="rounded-lg bg-[#d1d5db] p-3 w-[5rem]">D4</button>
+                    </div>
+                    
+                </div>
             </div>
             
              </div>
@@ -241,7 +243,7 @@
                   </ul>
             </div>
          
-            <div>
+            <div id="addSeatName">
           
             </div>
           
@@ -249,7 +251,7 @@
                 <ul class="flex gap-20 border-t-2 border-dotted pb-5">
                     <li class="font-inter font-medium">Total Price</li>
                     <li></li>
-                    <li class="font-inter font-medium">BDT <span>0</span></li>
+                    <li class="font-inter font-medium">BDT <span id="totalPrice">0</span></li>
                 </ul>
                 
             </div>
@@ -280,6 +282,11 @@
              </label>
              <br>
              <button class="bg-[#1DD100] p-2 rounded-lg w-[21rem] text-white font-semibold btn">Next</button>
+
+             <div class="flex justify-around">
+                <p class="underline font-raleway">terms and condition</p>
+                <p class="underline font-raleway">Cancellation policy</p>
+             </div>
          </div>
          
         </div>
@@ -288,7 +295,7 @@
     </section>
 
     <!-- success -->
-  <section class="mt-10 bg-[#F7F8F8]">
+  <!-- <section class="mt-10 bg-[#F7F8F8]">
   <dialog class="bg-white w-[50rem] border-2 rounded-xl p-8">
     <div class="text-center space-y-3">
         <img class="ml-[21rem]" src="images/success.png" alt="">
@@ -300,7 +307,7 @@
       </div>
 
 
-  </dialog>
+  </dialog> -->
 
   </section>
 
