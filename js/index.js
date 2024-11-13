@@ -127,8 +127,7 @@ seatColor('D4');
 
 const popup=document.getElementById('popup');
 function openpopup(){
-  popup.classList.add('scale-125','top-[140]');
-  popup.classList.add('top-[140]');
+  popup.classList.add('scale-125');
   popup.classList.remove('hidden');
 }
 function closepopup(){
