@@ -19,14 +19,14 @@ function sami(){
  let count = 0;
 function seatColor(event){
 const seat = document.getElementById(event);
-seat.addEventListener('click',function men(){
+seat.addEventListener('click',function(){
   count=count + 1;
   if(count>4){
   return('you can not select more');
   }
 seat.style.backgroundColor='#1DD100';
 seat.style.color='white';
-
+this.disabled = true;
 
   const addSeatNames = document.getElementById('addSeatName');
   const ul = document.createElement('ul');
@@ -45,9 +45,9 @@ seat.style.color='white';
 
  let totalprice = 0;
  const price = parseInt(li3.innerText);
- totalprice = price + totalprice;
+ const totalTaka = price * count;
   const totalPrices = document.getElementById('totalPrice');
-  totalPrices.innerText=totalprice; 
+  totalPrices.innerText=totalTaka;
   
 
     const reduceSeats = document.getElementById('reduce-seat');
@@ -62,12 +62,52 @@ seat.style.color='white';
     const newSeatSam = newSeatNumbers + 1;
     totalSeats.innerText=newSeatSam;
     if(count<4){
-      return ('can not select more');
+    return('can not select more');
     }
-  
- 
+
  });
 };
+
+
+const applyButton= document.getElementById('apply');
+  applyButton.addEventListener('click',function(){
+    const inputButton=document.getElementById('input-Button').value;
+    const coupon = inputButton.split(' ').join('').toUpperCase();
+    //const li3 = document.createElement('li');
+    const price =550;        //add
+    const count=4;           //add
+    const totalTaka = price * count;
+    
+    if(count>=4){
+      //applyButton.removeAttribute('disabled');
+      
+     if(coupon==='COUPLE20'){
+    const discount = document.getElementById('discount');
+    const discountValue = totalTaka * 0.15;
+    discount.innerText=discountValue;
+    const grandTotal= document.getElementById('grand-Total');
+    grandTotal.innerText= totalTaka-discountValue;
+    
+    }
+     else if(coupon==='NEW15'){
+      const discount=document.getElementById('discount');
+      const discountValue=totalTaka * 0.2;
+      discount.innerText=discountValue;
+      const grandTotal=document.getElementById('grand-Total');
+      grandTotal.innerText=totalTaka-discountValue;
+      
+     }
+     else{
+      alert('invalid coupon');
+     }
+    }
+    else{
+      alert('2200 koros koran bhai');
+    }
+    
+  })
+
+
 seatColor('A3');
 seatColor('A4');
 seatColor('B1');
@@ -84,10 +124,3 @@ seatColor('D1');
 seatColor('D2');
 seatColor('D3');
 seatColor('D4');
-
-
-
-
-
-
-
