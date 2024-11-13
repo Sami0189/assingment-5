@@ -289,7 +289,7 @@
                 <input class="border-2 p-2 rounded-lg w-[21rem]" type="text" name="" id="" placeholder="enter your ID">
              </label>
              <br>
-             <button class="bg-[#1DD100] p-2 rounded-lg w-[21rem] text-white font-semibold btn">Next</button>
+             <button onclick="openpopup()" class="bg-[#1DD100] p-2 rounded-lg w-[21rem] text-white font-semibold btn">Next</button>
 
              <div class="flex justify-around">
                 <p class="underline font-raleway">terms and condition</p>
@@ -303,20 +303,15 @@
     </section>
 
     <!-- success -->
-  <!-- <section class="mt-10 bg-[#F7F8F8]">
-  <dialog class="bg-white w-[50rem] border-2 rounded-xl p-8">
-    <div class="text-center space-y-3">
-        <img class="ml-[21rem]" src="images/success.png" alt="">
-        <h3 class="font-semibold text-4xl text-green-500 font-raleway">SUCCESS</h3>
-        <h4 class="font-semibold text-2xl w-[38rem]">Thank you for Booking Our Bus Seats. 
+   <section class="mt-10">
+    <div id="popup" class="border-2 border-yellow-300 w-[45rem] text-center bg-gradient-to-r from-yellow-400 to-red-500 rounded-xl p-6 absolute left-[40rem] top-[138rem] space-y-4 shadow-2xl scale-50 translate-y-20 hidden duration-700">
+        <img class="ml-[17.5rem]" src="images/success.png" alt="">
+        <h3 class="font-bold text-4xl text-white font-raleway">SUCCESS</h3>
+        <h4 class="font-semibold text-2xl w-[38rem] text-white">Thank you for Booking Our Bus Seats. 
             We are working hard to find the best service and deals for you.</h4>
-            <p>Shortly you will find a confirmation in your email.</p>
-            <button class="text-white font-semibold rounded-lg bg-green-600 p-3 w-[8rem] btn">continue</button>
+            <p class="text-white">Shortly you will find a confirmation in your email.</p>
+            <button onclick="closepopup()" class="text-white font-semibold rounded-lg bg-gradient-to-r from-yellow-500 to-red-500 p-3 w-[8rem] btn border-red-600">continue</button>
       </div>
-
-
-  </dialog> -->
-
   </section>
 
 </section>

@@ -124,3 +124,14 @@ seatColor('D1');
 seatColor('D2');
 seatColor('D3');
 seatColor('D4');
+
+const popup=document.getElementById('popup');
+function openpopup(){
+  popup.classList.add('scale-125','top-[140]');
+  popup.classList.add('top-[140]');
+  popup.classList.remove('hidden');
+}
+function closepopup(){
+  popup.classList.remove('scale-125');
+  popup.classList.add('hidden');
+}
