@@ -74,6 +74,7 @@ const applyButton= document.getElementById('apply');
     const inputButton=document.getElementById('input-Button').value;
     const coupon = inputButton.split(' ').join('').toUpperCase();
     //const li3 = document.createElement('li');
+    //const price = parseInt(li3.innerText);
     const price =550;        //add
     const count=4;           //add
     const totalTaka = price * count;
@@ -102,7 +103,7 @@ const applyButton= document.getElementById('apply');
      }
     }
     else{
-      alert('2200 koros koran bhai');
+      alert('4 ta ticket kinan bhai');
     }
     
   })
